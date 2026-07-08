@@ -1,13 +1,18 @@
-HELP.md
-target/
-!.mvn/wrapper/maven-wrapper.jar
+# Database files
+data/*.db
+data/*.db-journal
+data/*.sqlite
+data/*.sqlite-journal
 
-### Node / Vite ###
-node_modules/
-dist/
-*.local
-
-### IDE ###
+# IDE settings
 .idea/
 *.iml
-.vscode/
+
+# Maven build artifacts
+target/
+*.jar
+*.war
+*.ear
+
+# Logs
+*.log
