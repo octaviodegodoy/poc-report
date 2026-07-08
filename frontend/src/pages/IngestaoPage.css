@@ -1,0 +1,209 @@
+.ingestao-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 28px 32px;
+  margin-bottom: 22px;
+}
+
+.ingestao-card h3 {
+  margin: 0 0 18px;
+  color: var(--vivo-purple-dark);
+  font-size: 18px;
+}
+
+.field {
+  margin-bottom: 20px;
+}
+.field label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #191919;
+}
+.field .hint {
+  font-size: 12px;
+  color: var(--grey5);
+  margin-top: 4px;
+}
+
+input[type="month"],
+input[type="file"],
+input[type="text"] {
+  width: 100%;
+  max-width: 360px;
+  padding: 10px 12px;
+  border: 1px solid var(--grey3);
+  border-radius: 8px;
+  font-size: 14px;
+  background: var(--white);
+}
+
+.btn-primary {
+  background: var(--vivo-purple);
+  color: var(--white);
+  border: none;
+  border-radius: 24px;
+  padding: 12px 28px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.btn-primary:hover:not(:disabled) {
+  background: var(--vivo-purple-dark);
+}
+.btn-primary:disabled {
+  background: var(--grey3);
+  cursor: not-allowed;
+}
+
+.message {
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 18px;
+  font-weight: 500;
+}
+.message-success {
+  background: var(--vivo-green-l10);
+  color: var(--vivo-purple-dark);
+  border: 1px solid var(--vivo-green);
+}
+.message-error {
+  background: #fce4ef;
+  color: var(--vivo-pepper);
+  border: 1px solid var(--vivo-pepper);
+}
+
+.progress-bar {
+  height: 10px;
+  background: var(--grey2);
+  border-radius: 6px;
+  overflow: hidden;
+  margin-top: 12px;
+}
+.progress-bar > div {
+  height: 100%;
+  background: var(--vivo-green);
+  transition: width 0.3s ease;
+}
+
+.result-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 18px;
+}
+.result-item {
+  background: var(--grey1);
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+}
+.result-item .valor {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--vivo-purple);
+}
+.result-item .rotulo {
+  font-size: 13px;
+  color: var(--grey5);
+  margin-top: 4px;
+}
+.result-item.erro .valor {
+  color: var(--vivo-pepper);
+}
+
+.erros-list {
+  max-height: 220px;
+  overflow: auto;
+  background: var(--grey1);
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-size: 13px;
+  color: var(--vivo-pepper);
+}
+.erros-list div {
+  padding: 2px 0;
+}
+
+/* ── Download do arquivo de erros ───────────────────── */
+.download-erros {
+  margin-bottom: 18px;
+}
+.btn-download {
+  display: inline-block;
+  background: var(--vivo-pepper);
+  color: var(--white);
+  border: none;
+  border-radius: 24px;
+  padding: 10px 22px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+.btn-download:hover {
+  opacity: 0.88;
+}
+.download-erros .hint {
+  font-size: 12px;
+  color: var(--grey5);
+  margin-top: 6px;
+}
+
+/* ── Painel TMS ─────────────────────────────────────── */
+.tms-section {
+  margin-top: 22px;
+  border-top: 1px solid var(--grey2);
+  padding-top: 18px;
+}
+.tms-section h4 {
+  margin: 0 0 12px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--grey5);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.tms-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+}
+.tms-item {
+  background: var(--grey1);
+  border-radius: 8px;
+  padding: 14px 10px;
+  text-align: center;
+  border: 1px solid var(--grey2);
+}
+.tms-item.tms-total {
+  background: var(--vivo-purple-dark);
+  border-color: var(--vivo-purple-dark);
+}
+.tms-item.tms-total .tms-valor {
+  color: #fff;
+}
+.tms-item.tms-total .tms-rotulo {
+  color: rgba(255,255,255,0.75);
+}
+.tms-item.tms-throughput {
+  border-color: var(--vivo-green);
+}
+.tms-item.tms-throughput .tms-valor {
+  color: var(--vivo-green);
+}
+.tms-valor {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--vivo-purple);
+}
+.tms-rotulo {
+  font-size: 11px;
+  color: var(--grey5);
+  margin-top: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}

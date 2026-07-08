@@ -1,0 +1,13 @@
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+### Node / Vite ###
+node_modules/
+dist/
+*.local
+
+### IDE ###
+.idea/
+*.iml
+.vscode/

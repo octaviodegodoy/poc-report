@@ -1,0 +1,14 @@
+{
+  "folders": [
+    { "name": "poc-ingestao-transacao", "path": "." },
+    { "name": "backend", "path": "backend" },
+    { "name": "frontend", "path": "frontend" }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/target": true,
+      "**/node_modules": true
+    },
+    "java.configuration.updateBuildConfiguration": "automatic"
+  }
+}
